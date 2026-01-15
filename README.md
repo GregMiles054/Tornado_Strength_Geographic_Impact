@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./Assets/tornado_banner.png?v=1" height="300" width="1000" alt="Tornado forming over plains">
+  <img src="Assets/tornado_banner.png" height="300" width="1000" alt="Tornado forming over plains">
 </p>
 
 <h1 align="center">🌪️ Tornado Alley Evaluation</h1>
@@ -49,7 +49,7 @@ The data utilized in this project is organized as follows:
 ```text
 project_root/
 │── Assets/
-│   ├── Tornado_banner.avif                 # Tornado Banner for README.md
+│   ├── Tornado_banner.png                 # Tornado Banner for README.md
 ├── data/
 │   ├── Raw_Tornado_Data                    # 2004, 2014, 2024 raw files
 │   └── Cleaned_Tornado_Data                # Combined master dataset
