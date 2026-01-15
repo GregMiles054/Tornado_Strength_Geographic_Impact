@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./Assets/tornado_banner.png?raw=true" height="300" width="1000" alt="Tornado forming over plains">
+  <img src="./Assets/tornado_banner.png?v=1" height="300" width="1000" alt="Tornado forming over plains">
 </p>
 
 <h1 align="center">🌪️ Tornado Alley Evaluation</h1>
