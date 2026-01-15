@@ -1,16 +1,28 @@
-# Analysis of Tornado Patterns (2004–2024)
+<p align="center">
+  <img src="assets/tornado_banner.avif" height="300" width="1000" alt="Tornado forming over plains">
+</p>
+
+<h1 align="center">🌪️ Tornado Alley Evaluation</h1>
+
+<h2 align="center">
+  An analysis of U.S. tornado frequency, severity, and impact
+</h2>
+
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![Pandas](https://img.shields.io/badge/Library-Pandas-orange.svg)
 ![NOAA](https://img.shields.io/badge/Data-NOAA-informational.svg)
 
-## 🌪️ Overview
-Welcome to my project! As a weather fanatic, I have always been interested in severe weather. After some thought and consideration, I have decided to answer the main question: **"Is tornado alley shifting eastward?"**
+<h2 align="center">🌪️ Overview</h2>
+<p>Welcome to my project! As a weather fanatic, I have always been interested in severe weather. After some thought and consideration, I have decided to answer the main question: "Is tornado alley shifting eastward?"</p>
 
 This project explores tornadoes across the United States from 2004 up until 2024. To identify long-term trends while filtering out yearly "noise," the data is polled once per decade: **2004, 2014, and 2024.** We will investigate:
 * Which states have the highest tornado frequency.
-* Which regions experience the most severe storms.
+* Which regions experience the most severe tornadoes.
 * Physical characteristics like EF status, path length/width, and time of day/year.
+* Are the number of tornadoes increasing over the past few decades?
+* Are some states (In particular, eastward ones) seeing an increase of tornadoes?
+
 
 
 
@@ -28,30 +40,25 @@ The primary objective of this project is to demonstrate a full data science work
 ## 📂 Data Structure
 The data utilized in this project is organized as follows:
 
-* **`data/raw/`**: Original, unmodified CSV files obtained from **NOAA** (The National Oceanic and Atmospheric Administration).
-* **`data/cleaned/`**: A processed CSV file used for analysis, containing all three decadal data points combined and standardized.
-
-| Variable | Description |
-| :--- | :--- |
-| **EF Status** | The Enhanced Fujita scale rating (intensity). |
-| **Length/Width** | The physical dimensions of the tornado's path. |
-| **Time-Based** | The specific month and time of day of touchdown. |
+* **`data/Cleaned_Tornado_Data/`**: A processed CSV file used for analysis, containing all three decadal data points combined and standardized.
+* **`data/Raw_Tornado_Data/`**: Original, unmodified CSV files obtained from **NOAA** (The National Oceanic and Atmospheric Administration).
 
 ---
 
 ## 🛠️ Project Directory
 ```text
 project_root/
-│
+│── Assets/
+│   ├── Tornado_banner.avif                 # Tornado Banner for README.md
 ├── data/
-│   ├── Raw_Tornado_Data             # 2004, 2014, 2024 raw files
-│   └── Cleaned_Tornado_Data       # Combined master dataset
+│   ├── Raw_Tornado_Data                    # 2004, 2014, 2024 raw files
+│   └── Cleaned_Tornado_Data                # Combined master dataset
 │
 ├── notebooks/
-│   ├── Tornado_data_exploration.ipynb
+│   ├── Tornado_data_exploration.ipynb      # Notebook for data analysis
 │
-├── requirements.txt
-└── README.md
+├── requirements.txt                        # Requirements file
+└── README.md                               # Readme file
 ```
 
 ---
