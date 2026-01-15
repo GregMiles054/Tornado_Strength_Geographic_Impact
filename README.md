@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/GregMiles054/Tornado_alley_evaluation/main/Assets/tornado_banner.png" height="300" width="1000" alt="Tornado forming over plains">
+  <img src="Assets/Tornado_banner.png" height="300" width="1000" alt="Tornado forming over plains">
 </p>
 
 <h1 align="center">🌪️ Tornado Alley Evaluation</h1>
