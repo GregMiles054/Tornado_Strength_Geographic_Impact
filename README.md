@@ -26,58 +26,81 @@ This project explores tornadoes across the United States from 2004 up until 2024
 
 
 
----
-
-## 🎯 Project Goals
+<h2 align="center"> 🎯 Project Goals</h2>
 The primary objective of this project is to demonstrate a full data science workflow:
+
 1.  **Data Cleaning:** Handling raw meteorological records.
 2.  **Transformation:** Standardizing formats across three different decades.
 3.  **Aggregation:** Summarizing data by state and intensity.
 4.  **Visualization:** Creating maps and charts using Python and `pandas`.
 
----
 
-## 📂 Data Structure
+<h2 align="center"> 📂 Data Structure</h2>
 The data utilized in this project is organized as follows:
 
 * **`data/Cleaned_Tornado_Data/`**: A processed CSV file used for analysis, containing all three decadal data points combined and standardized.
 * **`data/Raw_Tornado_Data/`**: Original, unmodified CSV files obtained from **NOAA** (The National Oceanic and Atmospheric Administration).
 
----
 
-## 🛠️ Project Directory
+<h2 align="center">🛠️ Project Directory</h2>
+
 ```text
 project_root/
 │── Assets/
 │   ├── Tornado_banner.png                 # Tornado Banner for README.md
 ├── data/
-│   ├── Raw_Tornado_Data                    # 2004, 2014, 2024 raw files
-│   └── Cleaned_Tornado_Data                # Combined master dataset
+│   ├── Raw_Tornado_Data                   # 2004, 2014, 2024 raw files
+│   └── Cleaned_Tornado_Data               # Combined master dataset
 │
 ├── notebooks/
-│   ├── Tornado_data_exploration.ipynb      # Notebook for data analysis
+│   ├── Tornado_data_exploration.ipynb     # Notebook for data analysis
 │
-├── requirements.txt                        # Requirements file
-└── README.md                               # Readme file
+├── README.MD                              # Readme file
+└── requirements.txt                       # Requirements file
 ```
 
----
-
-## 🚀 How to Run the Analysis
+<h2 align="center"> 🚀 How to Run the Analysis</h2>
 
 Follow these steps to set up the environment and replicate the analysis on your local machine.
 
-### 1. Clone the Repository
+### **1. Clone the Repository**
 Open your terminal or command prompt and run:
 ```bash
 git clone https://github.com/GregMiles054/Tornado_alley_evaluation.git
 ```
+### **2. Create and Activate a Virtual Environment**
 
-### 2. Install dependencies and requirements
+To keep project dependencies isolated, create and activate a Python virtual environment.
+
+**Create the virtual environment:**
+```bash
+python -m venv .venv
+```
+
+**Activate the virtual environment:**
+For Windows (Powershell in VS Code)
+```bash
+.venv\Scripts\Activate.ps1
+```
+For Windows (Git Bash in VS Code)
+```bash
+source .venv/Scripts/activate
+```
+For macOS / Linux (VS Code terminal)
+```bash
+source .venv/bin/activate
+```
+
+**Please make sure to do this before installing depedencies in the step below!!**
+
+
+### **3. Install dependencies and requirements**
 Open your terminal and run:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Run the Data cleaning notebook
-Run the Tornado_data_exploration.ipynb file to generate the analysis and the tornado_all_years_cleaned_csv
+### **4. Run the Data cleaning notebook**
+```bash
+Run the Tornado_data_exploration.ipynb file to generate the analysis and the tornado_all_years_cleaned_csv.
+```
