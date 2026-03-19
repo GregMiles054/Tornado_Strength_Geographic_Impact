@@ -44,19 +44,24 @@ The data utilized in this project is organized as follows:
 
 <h2 align="center">🛠️ Project Directory</h2>
 
-```text
+```
 project_root/
-│── Assets/
-│   ├── Tornado_banner.png                 # Tornado Banner for README.md
+├── Assets/
+│   └── Tornado_banner.png          # Tornado Banner for README.md
 ├── data/
-│   ├── Raw_Tornado_Data                   # 2004, 2014, 2024 raw files
-│   └── Cleaned_Tornado_Data               # Combined master dataset
-│
+│   ├── Raw_Tornado_Data            # 2004, 2014, 2024 raw files
+│   ├── Cleaned_Tornado_Data        # Combined master dataset
+│   └── Raw_FEMA_Data/
+│       └── FEMA_Declarations.csv   # FEMA disaster declarations
+├── Graphs/                         # Generated charts and maps
 ├── notebooks/
-│   ├── Tornado_data_exploration.ipynb     # Notebook for data analysis
-│
-├── README.MD                              # Readme file
-└── requirements.txt                       # Requirements file
+│   ├── Tornado_data_exploration.ipynb    # Notebook for data analysis
+│   ├── FEMA_data_exploration.ipynb       # FEMA data cleaning notebook
+│   └── Tornado_SQL_database.ipynb        # SQL database notebook
+├── tornado_alley.db                # SQLite database
+├── .gitignore
+├── README.md
+└── requirements.txt                # Requirements file
 ```
 
 <h2 align="center"> 🚀 How to Run the Analysis</h2>
@@ -100,7 +105,10 @@ Open your terminal and run:
 pip install -r requirements.txt
 ```
 
-### **4. Run the Data cleaning notebook**
+### **4. Run the Data cleaning notebooks**
 ```bash
-Run the Tornado_data_exploration.ipynb file to generate the analysis and the tornado_all_years_cleaned_csv.
+Run Tornado_data_exploration.ipynb **first** to generate the analysis and the tornado_all_years_cleaned_csv. This will also prepare data to be used within SQLite. After that notebook has ran, **secondly,** please run FEMA_data_exploration.ipynb to generate clean and prepare data tailored to SQLite, this data includes FEMA assistance during tornado events. **Lastly,** run the Tornado_SQL_database.ipynb to generate the SQL database, that creates an indepth evaulation of data. The notebooks contain some brief overview, but the data is mainly picked apart within that final notebook.
 ```
+
+# <h2 align="center">⚠️ <span style="color:red; font-size:50px;">DISCLAIMER</span></h2>
+### **Some parts of this project employ the use of ClaudeAI to automate tasks. The ideas are my own work and an explanation is provided regarding how the code works.**
