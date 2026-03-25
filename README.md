@@ -115,8 +115,8 @@ pip install -r requirements.txt
 ```
 
 ### **4. Run the Data cleaning notebooks**
-```bash
-Run Tornado_data_exploration.ipynb **first** to generate the analysis and the tornado_all_years_cleaned_csv. This will also prepare data to be used within SQLite. After that notebook has ran, **secondly,** please run FEMA_data_exploration.ipynb to generate clean and prepare data tailored to SQLite, this data includes FEMA assistance during tornado events. **Lastly,** run the Tornado_SQL_database.ipynb to generate the SQL database, that creates an indepth evaulation of data. The notebooks contain some brief overview, but the data is mainly picked apart within that final notebook.
+```
+To build the complete dataset and SQL environment, run the notebooks in this specific sequence: Tornado_data_exploration.ipynb > FEMA_data_exploration.ipynb > Tornado_SQL_database.ipynb
 ```
 
 # <h2 align="center">⚠️ <span style="color:red; font-size:50px;">DISCLAIMER</span></h2>
