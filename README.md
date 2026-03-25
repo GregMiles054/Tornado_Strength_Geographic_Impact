@@ -47,21 +47,30 @@ The data utilized in this project is organized as follows:
 ```
 project_root/
 ├── Assets/
-│   └── Tornado_banner.png          # Tornado Banner for README.md
-├── data/
-│   ├── Raw_Tornado_Data            # 2004, 2014, 2024 raw files
-│   ├── Cleaned_Tornado_Data        # Combined master dataset
-│   └── Raw_FEMA_Data/
-│       └── FEMA_Declarations.csv   # FEMA disaster declarations
-├── Graphs/                         # Generated charts and maps
-├── notebooks/
-│   ├── Tornado_data_exploration.ipynb    # Notebook for data analysis
-│   ├── FEMA_data_exploration.ipynb       # FEMA data cleaning notebook
-│   └── Tornado_SQL_database.ipynb        # SQL database notebook
-├── tornado_alley.db                # SQLite database
+│   ├── Tornado_banner.png               # Tornado Banner for README.md
+│   └── Tornado_ERD.jpeg                 # Entity Relationship Diagram
+├── Data/
+│   ├── Cleaned_FEMA_Data/
+│   │   └── FEMA_data_cleaned.csv
+│   ├── Cleaned_Tornado_Data/
+│   │   ├── eastern_state_notation.csv
+│   │   └── tornado_all_years_cleaned.csv
+│   ├── Raw_FEMA_Data/
+│   │   └── FEMA_Declarations.csv        # FEMA disaster declarations
+│   └── Raw_Tornado_Data/
+│       ├── tornado_2004_raw_data.csv
+│       ├── tornado_2014_raw_data.csv
+│       └── tornado_2024_raw_data.csv
+├── Graphs/                              # Generated charts and maps
+├── Notebooks/
+│   ├── Tornado_data_exploration.ipynb   # Notebook for data analysis
+│   ├── FEMA_data_exploration.ipynb      # FEMA data cleaning notebook
+│   └── Tornado_SQL_database.ipynb       # SQL database notebook
+├── Tornado_SQL_database/
+│   └── tornado_alley.db                 # SQLite database
 ├── .gitignore
 ├── README.md
-└── requirements.txt                # Requirements file
+└── requirements.txt                     # Requirements file
 ```
 
 <h2 align="center"> 🚀 How to Run the Analysis</h2>
