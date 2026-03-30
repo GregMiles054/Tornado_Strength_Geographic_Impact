@@ -119,5 +119,5 @@ pip install -r requirements.txt
 To build the complete dataset and SQL environment, run the notebooks in this specific sequence: Tornado_data_exploration.ipynb > FEMA_data_exploration.ipynb > Tornado_SQL_database.ipynb
 ```
 
-# <h2 align="center">⚠️ <span style="color:red; font-size:50px;">DISCLAIMER</span></h2>
+# <h2 align="center">⚠️ <span style="color:red; font-size:30px;">DISCLAIMER</span></h2>
 ### **Some parts of this project employ the use of ClaudeAI to automate tasks. The ideas are my own work and an explanation is provided regarding how the code works.**
