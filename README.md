@@ -63,9 +63,9 @@ project_root/
 │       └── tornado_2024_raw_data.csv
 ├── Graphs/                              # Generated charts and maps
 ├── Notebooks/
-│   ├── Tornado_data_exploration.ipynb   # Notebook for data analysis
-│   ├── FEMA_data_exploration.ipynb      # FEMA data cleaning notebook
-│   └── Tornado_SQL_database.ipynb       # SQL database notebook
+│   ├── 01_Tornado_Data_Cleaning.ipynb   # Notebook for data analysis
+│   ├── 02_FEMA_Data_Exploration.ipynb   # FEMA data cleaning notebook
+│   └── 03_SQL_Analysis.ipynb            # SQL database notebook
 ├── Tornado_SQL_database/
 │   └── tornado_alley.db                 # SQLite database
 ├── .gitignore
@@ -105,7 +105,7 @@ For macOS / Linux (VS Code terminal)
 source .venv/bin/activate
 ```
 
-**Please make sure to do this before installing depedencies in the step below!!**
+**Please make sure to do this before installing dependencies in the step below!!**
 
 
 ### **3. Install dependencies and requirements**
@@ -114,10 +114,23 @@ Open your terminal and run:
 pip install -r requirements.txt
 ```
 
-### **4. Run the Data cleaning notebooks**
-```
-To build the complete dataset and SQL environment, run the notebooks in this specific sequence: Tornado_data_exploration.ipynb > FEMA_data_exploration.ipynb > Tornado_SQL_database.ipynb
-```
+### **4. Run the notebooks in sequence**
+Open the `Notebooks/` folder and run them in this order:
+1. `01_Tornado_Data_Cleaning.ipynb`
+2. `02_FEMA_Data_Exploration.ipynb`
+3. `03_SQL_Analysis.ipynb`
 
-# <h2 align="center">⚠️ <span style="color:red; font-size:30px;">DISCLAIMER</span></h2>
-### **Some parts of this project employ the use of ClaudeAI to automate tasks. The ideas are my own work and an explanation is provided regarding how the code works.**
+<h2 align="center">📊 Conclusion</h2>
+
+Is Tornado Alley shifting eastward? The data suggests something more nuanced: growth rather 
+than a shift. The original Tornado Alley states continue to see substantial tornado activity, 
+while eastern states are experiencing a clear increase — a pattern the meteorological community 
+refers to as "Dixie Alley." Tornado Alley isn't moving; it's expanding.
+
+Tornadoes across the continental United States are increasing in both frequency and strength, 
+with wider paths and greater areas of impact. While the once-per-decade sampling means some 
+snapshots may not fully capture every trend, the overall pattern is consistent: tornadoes are 
+growing stronger and reaching further east than in decades past.
+
+
+> ⚠️ <span style="color:red;">**Disclaimer:** Some parts of this project employ the use of Claude AI to automate tasks. The ideas are my own work and an explanation is provided regarding how the code works.</span>
