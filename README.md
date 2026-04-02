@@ -80,7 +80,7 @@ Follow these steps to set up the environment and replicate the analysis on your 
 ### **1. Clone the Repository**
 Open your terminal or command prompt and run:
 ```bash
-git clone https://github.com/GregMiles054/Tornado_alley_evaluation.git
+git clone https://github.com/GregMiles054/Tornado_Strength_Geographic_Impact.git
 ```
 ### **2. Create and Activate a Virtual Environment**
 
