@@ -109,7 +109,9 @@ source .venv/bin/activate
 
 
 ### **3. Install dependencies and requirements**
-Open your terminal and run:
+Click the **Select Kernel** button located in the top-right corner of the notebook editor. Select the virtual envirionment (venv) Kernel. Open your terminal and **Make sure you change directory into the project to access the requirements.txt!** 
+
+Run the following command to install requirements:
 ```bash
 pip install -r requirements.txt
 ```
