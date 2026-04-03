@@ -105,11 +105,19 @@ For macOS / Linux (VS Code terminal)
 source .venv/bin/activate
 ```
 
-**Please make sure to do this before installing dependencies in the step below!!**
+**Please make sure to do this before proceeding to the next step!!**
 
 
-### **3. Install dependencies and requirements**
-Click the **Select Kernel** button located in the top-right corner of the notebook editor. Select the virtual envirionment (venv) Kernel. Open your terminal and **Make sure you change directory into the project to access the requirements.txt!** 
+### **3. Select the Kernel and Install Dependencies**
+Once the virtual environment is activated, you need to point the notebook to it:
+
+1. Click the **Select Kernel** button in the top-right corner of the notebook editor
+2. Choose **Python Environments** → select the `.venv` virtual environment from the list
+3. Open your terminal and make sure you are in the project root directory before running:
+```bash
+pip install -r requirements.txt
+```
+**Note:** The kernel must be set to the virtual environment so the notebook uses the same packages you install in the next step.
 
 Run the following command to install requirements:
 ```bash
